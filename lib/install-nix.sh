@@ -13,7 +13,7 @@ add_config() {
 # Set jobs to number of cores
 #add_config "max-jobs = auto"
 # Allow binary caches for user
-add_config "trusted-users = root $USER"
+#add_config "trusted-users = root $USER"
 # Append extra nix configuration if provided
 if [[ $INPUT_EXTRA_NIX_CONFIG != "" ]]; then
   add_config "$INPUT_EXTRA_NIX_CONFIG"
